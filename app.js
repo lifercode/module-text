@@ -8,7 +8,7 @@ app.use(cors())
 
 app.post("/text", async (req, res) => {
   res.json({
-    text: req?.body?.text || ''
+    text: req?.body?.inputsData?.text || ''
   })
 });
 
