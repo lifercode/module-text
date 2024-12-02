@@ -7,7 +7,9 @@ services:
       - "host.docker.internal:host-gateway"
     networks:
       - my-network
-
+    container_name: rugg-module-text
+    labels:
+      environment: rugg-module
 networks:
   my-network:
     driver: bridge
