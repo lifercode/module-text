@@ -12,6 +12,6 @@ app.post("/text", async (req, res) => {
   })
 });
 
-app.listen(7777, () => {
+app.listen(7777, '0.0.0.0', () => {
     console.log("server started on port 7777");
 });
